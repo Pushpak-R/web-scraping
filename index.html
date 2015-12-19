@@ -1,0 +1,25 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-rc.0/angular-sanitize.min.js"></script>
+		<script src="js/index.js"></script>
+	</head>
+	<body ng-app="teamViewer">
+		<div id="mainCont" ng-controller="listController">
+			<div class="member-block" ng-repeat="member in members" ng-click="$parent.showDesc=true;$parent.descIndex=$index">
+				<img ng-src="{{member.image}}" width="150" height="150" />
+				<h4 ng-bind-html="member.name"></h4>
+			</div>
+			<div id="descCont" ng-show="showDesc"></div>
+				<div id="desc" ng-show="showDesc">
+					<div id="name-desc">
+						<h3 ng-bind-html="members[descIndex].name"></h3>
+						<div ng-bind-html="members[descIndex].desc"></div>
+					</div>
+					<div id="closeBtn" ng-click="showDesc = false">X</div>
+					<img id="descImage" ng-src="{{members[descIndex].image}}" width="150" height="150" />
+				</div>
+		</div>
+	</body>
+</html>

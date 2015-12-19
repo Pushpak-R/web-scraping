@@ -1,0 +1,54 @@
+				.member-block {
+				    width: 200px;
+				    height: 200px;
+				    position: relative;
+				    float: left;
+				    display: inline-block;
+				    margin: 10px;
+				    text-align: center;
+				    cursor:pointer;
+				}
+				img {
+				    border-radius: 100px;
+				}
+				#descCont{
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0px;
+					top: 0px;
+					background: #FA7A2C;
+					opacity: 0.9;
+				}
+				#desc{
+					width: 80%;
+					min-height: 100px;
+					position: absolute;
+					left: 100px;
+					top: 150px;
+					background: white;
+				}
+				#descImage{
+					position: absolute;
+					top: -100px;
+				}
+				#name-desc{
+					    position: absolute;
+					    top: 0px;
+					    width: 100%;
+					    padding: 20px;
+					    background: white;
+					    padding-top: 40px;
+				}
+				#closeBtn{
+					width: 30px;
+					height: 30px;
+					position: absolute;
+					right: -30px;
+					top: 10px;
+					border: 2px solid black;
+					border-radius: 20px;
+					cursor: pointer;
+					text-align: center;
+    				line-height: 30px;
+				}
